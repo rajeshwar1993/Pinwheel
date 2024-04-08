@@ -17,8 +17,7 @@ const PaperFlower = ({
   positionY,
   leaning,
   duration,
-  text,
-  img,
+  wheel,
   isChosen,
   onSelected,
 }: Props) => {
@@ -47,15 +46,15 @@ const PaperFlower = ({
 
   return (
     <motion.div
-      className={`w-16 h-16 md:w-24 md:h-24 absolute cursor-pointer origin-center`}
+      className={`w-16 h-16 md:w-24 md:h-24 absolute cursor-pointer`}
       initial={{
-        rotate: leaning === 'left' ? -40 : 40,
+        rotate: leaning === 'left' ? -45 : 45,
         translateX: `${positionX}px`,
         translateY: `${positionY}px`,
       }}
       onClick={onSelected}
       variants={parentVariants}
-      animate={state}
+      // animate={state}
     >
       <motion.div
         animate={{ rotate: 360 }}
@@ -68,7 +67,7 @@ const PaperFlower = ({
           updateState(FlowerStates.Initial)
         }}
       >
-        <Image src={img} width={1000} height={1000} alt="flower" />
+        <Image src={wheel} width={1000} height={1000} alt="flower" />
       </motion.div>
       <div
         className="absolute left-[30px] top-[30px] md:left-[45px] md:top-[50px] h-28 md:h-40 w-1 origin-top z-0"
