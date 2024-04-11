@@ -38,10 +38,10 @@ export default function PlayArea() {
   }, [pinBarRef.current])
 
   return (
-    <div className="border">
+    <div className="pt-20 md:pt-1">
       <div className="mx-auto h-[80vh] aspect-9/16 flex justify-center items-center">
         <div
-          className="relative h-[90%] border border-red-900 w-full"
+          className="relative h-[90%] w-full"
           style={{
             backgroundImage: `url('/images/seller.png')`,
             backgroundRepeat: 'no-repeat',
@@ -50,7 +50,7 @@ export default function PlayArea() {
           }}
         >
           <div
-            className="relative w-[11%] h-[55%] top-[1%] left-[34%] border border-red-900"
+            className="relative w-[11%] h-[55%] top-[1%] left-[34%]"
             style={{
               transformBox: 'fill-box',
             }}

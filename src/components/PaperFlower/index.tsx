@@ -1,7 +1,6 @@
 import { WheelData } from '@/initalValues'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import * as Stick from '@/assets/images/stick.png'
 import { useEffect, useMemo, useState } from 'react'
 import { FlowerStates } from '@/types'
 
@@ -18,13 +17,11 @@ const PaperFlower = ({
   leaning,
   duration,
   wheel,
+  stickLength,
   isChosen,
   onSelected,
 }: Props) => {
-  const xPosHover = useMemo(
-    () => (leaning === 'left' ? positionX - 10 : positionX + 10),
-    [leaning]
-  )
+  const xPosHover = useMemo(() => 0, [])
 
   const [state, updateState] = useState<FlowerStates>(
     isChosen ? FlowerStates.ShowCase : FlowerStates.Initial
@@ -32,7 +29,7 @@ const PaperFlower = ({
 
   const parentVariants = {
     [FlowerStates.Initial]: { opacity: 0.8, scale: [1] },
-    [FlowerStates.Hover]: { opacity: 1, scale: [1.1], translateX: xPosHover },
+    [FlowerStates.Hover]: { opacity: 1, scale: [1.1] },
     [FlowerStates.ShowCase]: { opacity: 1, scale: [5], rotate: 0 },
   }
 
@@ -46,20 +43,20 @@ const PaperFlower = ({
 
   return (
     <motion.div
-      className={`w-16 h-16 absolute cursor-pointer`}
+      className={`absolute cursor-pointer origin-bottom`}
       initial={{
-        rotate: leaning === 'left' ? -45 : 45,
+        rotate: leaning,
         translateX: `${positionX}px`,
         translateY: `${positionY}px`,
       }}
       onClick={onSelected}
       variants={parentVariants}
-      // animate={state}
+      animate={state}
     >
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: duration, repeat: Infinity, ease: 'linear' }}
-        className="absolute z-10"
+        className="absolute z-10 w-16 h-16 left-[-30px] top-[-30px]"
         onHoverStart={() => {
           updateState(FlowerStates.Hover)
         }}
@@ -70,9 +67,10 @@ const PaperFlower = ({
         <Image src={wheel} width={1000} height={1000} alt="flower" />
       </motion.div>
       <div
-        className="absolute left-[30px] top-[30px]  h-28 md:h-40 w-1 origin-top z-0"
+        className={`w-1 origin-top z-0`}
         style={{
           backgroundColor: '#D9D9D9',
+          height: `${stickLength}px`,
         }}
       />
     </motion.div>

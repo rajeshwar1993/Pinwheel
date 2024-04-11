@@ -3,21 +3,29 @@ export enum Leaning {
   Right = 'right',
 }
 
-export enum XValsLeft {
-  X1 = -130,
-  X2 = -120,
-  X3 = -110,
-  X4 = -100,
+export enum Duration {
+  D1 = 1.0,
+  D2 = 1.5,
+  D3 = 2.0,
+  D4 = 2.5,
 }
-export enum XValsRight {
-  X1 = 100,
-  X2 = 90,
-  X3 = 80,
-  X4 = 70,
+
+export const XPosVariation = [5, -5, 10, -10]
+
+export const StickLength = [100, 120, 130, 140]
+
+export enum XVals {
+  X1 = 30,
+  X2 = 20,
+  X3 = 10,
+  X4 = 0,
+}
+export enum LeaningRange {
+  min = 0,
+  max = 120,
 }
 
 export type InitialData = {
-  id: number
   openImg: string
 }
 
@@ -25,8 +33,9 @@ export type WheelData = {
   id: number
   positionX: number
   positionY: number
-  leaning: Leaning
+  leaning: number
   duration: number
+  stickLength: number
   openImg: string
   wheel: typeof import('*.png')
   isChosen: boolean
@@ -34,43 +43,183 @@ export type WheelData = {
 
 export const PinwheelData: InitialData[] = [
   {
-    id: 1,
     openImg: '',
   },
   {
-    id: 2,
     openImg: '',
   },
   {
-    id: 3,
     openImg: '',
   },
   {
-    id: 4,
     openImg: '',
   },
   {
-    id: 5,
     openImg: '',
   },
   {
-    id: 6,
     openImg: '',
   },
   {
-    id: 7,
     openImg: '',
   },
   {
-    id: 8,
     openImg: '',
   },
   {
-    id: 9,
     openImg: '',
   },
   {
-    id: 10,
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
+    openImg: '',
+  },
+  {
     openImg: '',
   },
 ]

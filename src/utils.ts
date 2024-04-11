@@ -4,42 +4,45 @@ import * as PW2 from '@/assets/images/PW2.png'
 import {
   PinwheelData,
   type WheelData,
-  InitialData,
   Leaning,
-  XValsLeft,
-  XValsRight,
+  LeaningRange,
+  Duration,
+  XPosVariation,
+  StickLength,
 } from './initalValues'
 
 export const pinwheelData = (rect: DOMRect): WheelData[] => {
   if (PinwheelData.length === 0) return []
+  const durations = [Duration.D1, Duration.D2, Duration.D3, Duration.D4]
 
-  console.log('Detect changes: ', rect)
-  const XVals = {
-    [Leaning.Left]: [XValsLeft.X1, XValsLeft.X2, XValsLeft.X3, XValsLeft.X4],
-    [Leaning.Right]: [
-      XValsRight.X1,
-      XValsRight.X2,
-      XValsRight.X3,
-      XValsRight.X4,
-    ],
-  }
+  const intervalSize = Math.ceil((rect.height - 100) / PinwheelData.length)
 
-  const wheels: WheelData[] = PinwheelData.map((p) => {
+  const angleInterval = Math.ceil(
+    (LeaningRange.max - LeaningRange.min) / PinwheelData.length
+  )
+
+  const positionX = Math.ceil(rect.width / 2)
+
+  const wheels: WheelData[] = PinwheelData.map((p, index) => {
     const randomIndex = Math.trunc(Math.random() * 4)
 
-    const leaning = randomIndex % 2 === 0 ? Leaning.Left : Leaning.Right
+    const dir = index % 2 === 0 ? Leaning.Left : Leaning.Right
     const wheel = randomIndex % 2 === 0 ? PW1 : PW2
-    // const sw = screen.width
-    // const pwheight = screen.width > 768 ? 150 : 100
-    const pwheight = 100
-    const pinYPos = Math.trunc(Math.random() * rect.height) - pwheight
+    const duration = durations[randomIndex]
+    const pwheight = screen.width > 768 ? 190 : 100
+    const positionY = intervalSize * index - pwheight + 100
+    const leaning =
+      dir === Leaning.Left
+        ? angleInterval * index * -1 - 10
+        : angleInterval * index + 10
 
     const wheelData: WheelData = {
-      id: p.id,
-      positionX: XVals[leaning][randomIndex],
-      positionY: pinYPos,
+      id: index,
+      positionX: positionX + XPosVariation[randomIndex],
+      positionY,
       leaning,
-      duration: 0,
+      duration,
+      stickLength: StickLength[randomIndex],
       openImg: p.openImg,
       wheel,
       isChosen: false,
