@@ -46,7 +46,7 @@ const PaperFlower = ({
 
   return (
     <motion.div
-      className={`w-16 h-16 md:w-24 md:h-24 absolute cursor-pointer`}
+      className={`w-16 h-16 absolute cursor-pointer`}
       initial={{
         rotate: leaning === 'left' ? -45 : 45,
         translateX: `${positionX}px`,
@@ -70,7 +70,7 @@ const PaperFlower = ({
         <Image src={wheel} width={1000} height={1000} alt="flower" />
       </motion.div>
       <div
-        className="absolute left-[30px] top-[30px] md:left-[45px] md:top-[50px] h-28 md:h-40 w-1 origin-top z-0"
+        className="absolute left-[30px] top-[30px]  h-28 md:h-40 w-1 origin-top z-0"
         style={{
           backgroundColor: '#D9D9D9',
         }}
