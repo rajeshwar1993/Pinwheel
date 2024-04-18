@@ -12,7 +12,7 @@ export enum Duration {
 
 export const XPosVariation = [5, -5, 10, -10]
 
-export const StickLength = [100, 120, 130, 140]
+export const StickLength = [100, 140, 160, 140]
 
 export enum XVals {
   X1 = 30,
