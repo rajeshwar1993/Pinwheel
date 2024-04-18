@@ -12,7 +12,7 @@ export enum Duration {
 
 export const XPosVariation = [5, -5, 10, -10]
 
-export const StickLength = [100, 140, 160, 140]
+export const StickLength = [50, 70, 90, 110]
 
 export enum XVals {
   X1 = 30,
@@ -21,7 +21,7 @@ export enum XVals {
   X4 = 0,
 }
 export enum LeaningRange {
-  min = 0,
+  min = -120,
   max = 120,
 }
 
