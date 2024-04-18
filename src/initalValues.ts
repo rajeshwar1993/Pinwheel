@@ -1,8 +1,3 @@
-export enum Leaning {
-  Left = 'left',
-  Right = 'right',
-}
-
 export enum Duration {
   D1 = 1.0,
   D2 = 1.5,
@@ -11,8 +6,6 @@ export enum Duration {
 }
 
 export const XPosVariation = [5, -5, 10, -10]
-
-export const StickLength = [50, 70, 90, 110]
 
 export enum XVals {
   X1 = 30,

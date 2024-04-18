@@ -4,11 +4,9 @@ import * as PW2 from '@/assets/images/PW2.png'
 import {
   PinwheelData,
   type WheelData,
-  Leaning,
   LeaningRange,
   Duration,
   XPosVariation,
-  StickLength,
 } from './initalValues'
 
 const batch = 6
