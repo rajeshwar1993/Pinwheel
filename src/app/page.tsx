@@ -13,7 +13,8 @@ export default function Home() {
           Celebrating the Graphic Design Language of Public Spaces in India
         </div>
         <div className="grid grid-cols-5 gap-4">
-          <div className="col-span-5 lg:col-span-2 text-sm flex flex-col justify-center">
+          <div className="relative col-span-5 lg:col-span-2 text-sm flex flex-col justify-center">
+            <div className="absolute top-[50%] left-[50%]" id="refDiv" />
             <div>
               <p>
                 With the advent of technology, the wealth of research studies

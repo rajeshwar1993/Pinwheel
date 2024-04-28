@@ -1,11 +1,11 @@
 import { WheelData } from '@/initalValues'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { FlowerStates } from '@/types'
 
 type AddedProps = {
-  onSelected: () => void
+  onSelected: (id: number) => void
 }
 
 type Props = WheelData & AddedProps
@@ -21,59 +21,51 @@ const PaperFlower = ({
   isChosen,
   onSelected,
 }: Props) => {
-  const xPosHover = useMemo(() => 0, [])
-
   const [state, updateState] = useState<FlowerStates>(
     isChosen ? FlowerStates.ShowCase : FlowerStates.Initial
   )
 
   const parentVariants = {
-    [FlowerStates.Initial]: { opacity: 0.8, scale: [1] },
-    [FlowerStates.Hover]: { opacity: 1, scale: [1.1] },
-    [FlowerStates.ShowCase]: { opacity: 1, scale: [5], rotate: 0 },
+    [FlowerStates.Initial]: { opacity: 0.9, scale: [1] },
+    [FlowerStates.Hover]: { opacity: 1, scale: [1.2] },
   }
 
-  useEffect(() => {
-    if (isChosen) {
-      updateState(FlowerStates.ShowCase)
-    } else {
-      updateState(FlowerStates.Initial)
-    }
-  }, [isChosen])
-
   return (
-    <motion.div
-      className={`absolute cursor-pointer origin-bottom`}
-      initial={{
-        rotate: leaning,
-        translateX: `${positionX}px`,
-        translateY: `${positionY}px`,
-      }}
-      onClick={onSelected}
-      variants={parentVariants}
-      animate={state}
-    >
+    <>
       <motion.div
-        animate={{ rotate: 360 }}
-        transition={{ duration: duration, repeat: Infinity, ease: 'linear' }}
-        className="absolute z-10 w-16 h-16 left-[-30px] top-[-30px]"
-        onHoverStart={() => {
-          updateState(FlowerStates.Hover)
+        className={`absolute cursor-pointer origin-bottom`}
+        initial={{
+          rotate: leaning,
+          translateX: `${positionX}px`,
+          translateY: `${positionY}px`,
         }}
-        onHoverEnd={() => {
-          updateState(FlowerStates.Initial)
-        }}
+        transition={{ type: 'spring', duration: 2.2, bounce: 0.7 }}
+        onClick={onSelected.bind(null, id)}
+        variants={parentVariants}
+        animate={state}
       >
-        <Image src={wheel} width={1000} height={1000} alt="flower" />
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: duration, repeat: Infinity, ease: 'linear' }}
+          className="absolute z-10 w-16 h-16  left-[-30px] top-[-30px]"
+          onHoverStart={() => {
+            if (!isChosen) updateState(FlowerStates.Hover)
+          }}
+          onHoverEnd={() => {
+            if (!isChosen) updateState(FlowerStates.Initial)
+          }}
+        >
+          <Image src={wheel} width={1000} height={1000} alt="flower" />
+        </motion.div>
+        <div
+          className={`w-1 origin-top z-0`}
+          style={{
+            backgroundColor: '#D9D9D9',
+            height: `${stickLength}px`,
+          }}
+        />
       </motion.div>
-      <div
-        className={`w-1 origin-top z-0`}
-        style={{
-          backgroundColor: '#D9D9D9',
-          height: `${stickLength}px`,
-        }}
-      />
-    </motion.div>
+    </>
   )
 }
 

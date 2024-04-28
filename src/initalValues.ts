@@ -1,3 +1,8 @@
+export enum WheelType {
+  TypeA,
+  TypeB,
+}
+
 export enum Duration {
   D1 = 1.0,
   D2 = 1.5,
@@ -19,11 +24,13 @@ export enum LeaningRange {
 }
 
 export type InitialData = {
+  type: WheelType
   openImg: string
 }
 
 export type WheelData = {
   id: number
+  type: WheelType
   positionX: number
   positionY: number
   leaning: number
@@ -34,185 +41,269 @@ export type WheelData = {
   isChosen: boolean
 }
 
-export const PinwheelData: InitialData[] = [
+const PinwheelDataA: InitialData[] = [
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
   {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
-  },
-  {
-    openImg: '',
+    type: WheelType.TypeA,
+    openImg: '/images/sample.png',
   },
 ]
+
+const PinwheelDataB: InitialData[] = [
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+  {
+    type: WheelType.TypeB,
+    openImg: '/images/sample.png',
+  },
+]
+
+export const shuffle = (array: InitialData[]) => {
+  let currentIndex = array.length
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
+
+    // And swap it with the current element.
+    ;[array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ]
+  }
+
+  return array
+}
+
+export const PinwheelData = shuffle([...PinwheelDataA, ...PinwheelDataB])
