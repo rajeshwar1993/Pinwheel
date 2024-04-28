@@ -6,28 +6,24 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center p-8">
       <div className="w-full max-w-screen-2xl">
-        <div className="text-3xl md:text-7xl font-bold mb-2 md:mb-16">
-          Jagruk
-        </div>
+        <div className="text-3xl md:text-7xl font-bold mb-2 md:mb-4">फिरकी</div>
         <div className="col-span-5 lg:col-span-2 text-base md:text-2xl font-bold max-w-[300px]">
-          Celebrating the Graphic Design Language of Public Spaces in India
+          Objects of Transient Belongings
         </div>
-        <div className="grid grid-cols-5 gap-4">
-          <div className="relative col-span-5 lg:col-span-2 text-sm flex flex-col justify-center">
+        <div className="grid grid-cols-5 gap-4 mt-8">
+          <div className="relative col-span-5 md:col-span-2 text-sm flex flex-col justify-start">
             <div className="absolute top-[50%] left-[50%]" id="refDiv" />
             <div>
               <p>
-                With the advent of technology, the wealth of research studies
-                documenting language’s visual aspects has changed the language
-                study landscape.1 The merging of architecture and graphic design
-                in India’s public spaces seamlessly blends formality and
-                informality. While widely ingrained graphic design has been a
-                part of daily life, one can unravel the intricate threads of
-                informal visual expression through hand-painted signages,
-                posters, signboards and advertisements.
+                The merging of architecture and graphic design in India’s public
+                spaces seamlessly blends formality and informality. While widely
+                ingrained graphic design has been a part of daily life, one can
+                unravel the intricate threads of informal visual expression
+                through hand-painted signages, posters, signboards and
+                advertisements.
               </p>
-              <p className="mt-8">
-                Jagruk celebrates the multicoloured tapestry of graphic design
+              <p className="mt-4">
+                Firki celebrates the multicoloured tapestry of graphic design
                 elements in public spaces around India, delving into the
                 intricacies between cultural narratives and visual motifs. It
                 also explores the process of investigating the narrative of
@@ -38,17 +34,47 @@ export default function Home() {
                 vocabulary.
               </p>
             </div>
-            <div className="lg:mt-[70%]">
-              <span className="font-bold">Documentation images by</span>
-              <p>
-                Pallavi Yadav, Suneepa Das, Bhavani Bala, Anupa Joshy, Priyanka
-                Vaghela, Ronojoy Sircar, Shreeparna Chatterjee, Qainaat, Bandita
-                Ghosh, Niharika Arora, Srinidhi Ravishankar, Abhranil Munsi,
-                Vasundhara Kapoor
-              </p>
+            <div className="mt-12">
+              <div className="flex gap-x-6 mb-6">
+                <div className="flex flex-col w-16 items-center text-center">
+                  <div className="w-20 h-20 border">Image</div>
+                  <span className="text-xs">Documented Designs</span>
+                </div>
+                <div className="flex flex-col w-20 items-center text-center">
+                  <div className="w-20 h-20 border">Image</div>
+                  <span className="text-xs">Voices of the People</span>
+                </div>
+              </div>
+              <div>
+                <span className="font-bold mb-2 block">
+                  Documentation images by
+                </span>
+                <p>
+                  Pallavi Yadav, Suneepa Das, Bhavani Bala, Anupa Joshy,
+                  Priyanka Vaghela, Ronojoy Sircar, Shreeparna Chatterjee,
+                  Qainaat, Bandita Ghosh, Niharika Arora, Srinidhi Ravishankar,
+                  Abhranil Munsi, Vasundhara Kapoor
+                </p>
+              </div>
+              <div className="border-b border-black w-full my-4"></div>
+              <div className="text-xs flex justify-between">
+                <div>
+                  <div>
+                    Project by{' '}
+                    <span className="font-extrabold">Deepesh Sangtani</span>
+                  </div>
+                  <div>The Glasgow School of Art - Masters Degree Project</div>
+                </div>
+                <div className="md:mr-6">
+                  <div>Online version and website</div>
+                  <div>
+                    by <span className="font-extrabold">Rajeshwar Rudra</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col-span-5 lg:col-span-3">
+          <div className="col-span-5 md:col-span-3">
             <PlayArea />
           </div>
         </div>
