@@ -47,7 +47,7 @@ const PaperFlower = ({
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: duration, repeat: Infinity, ease: 'linear' }}
-          className="absolute z-10 w-16 h-16  left-[-30px] top-[-30px]"
+          className="absolute z-10 w-16 h-16 md:w-20 md:h-20 left-[-30px] top-[-30px]"
           onHoverStart={() => {
             if (!isChosen) updateState(FlowerStates.Hover)
           }}

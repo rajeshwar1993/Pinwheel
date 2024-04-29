@@ -3,6 +3,8 @@ import * as PW2 from '@/assets/images/PW2.png'
 import * as PW3 from '@/assets/images/PW3.png'
 import * as PW4 from '@/assets/images/PW4.png'
 import * as PC1 from '@/assets/images/PC1.png'
+import * as PC2 from '@/assets/images/PC2.png'
+import * as PC3 from '@/assets/images/PC3.png'
 
 import {
   PinwheelData,
@@ -18,6 +20,7 @@ const batch = 6
 const batchSize = PinwheelData.length / batch
 
 const PWImages = [PW1, PW2, PW3, PW4]
+const PCImages = [PC1, PC2, PC3, PC1]
 
 export const pinwheelData = (rect: DOMRect): WheelData[] => {
   if (PinwheelData.length === 0) return []
@@ -38,7 +41,8 @@ export const pinwheelData = (rect: DOMRect): WheelData[] => {
   const wheels: WheelData[] = PinwheelData.map((p, index) => {
     const randomIndex = Math.trunc(Math.random() * 4)
 
-    const wheel = p.type === WheelType.TypeA ? PWImages[randomIndex] : PC1
+    const wheel =
+      p.type === WheelType.TypeA ? PWImages[randomIndex] : PCImages[randomIndex]
     const duration = durations[randomIndex]
     const pwheight = screen.width > 768 ? 200 : 100
     const positionY = intervalSize * currentBatch - pwheight
