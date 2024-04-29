@@ -36,7 +36,6 @@ export const pinwheelData = (rect: DOMRect): WheelData[] => {
   )
 
   const positionX = Math.ceil(rect.width / 2)
-  console.log(rect.height, angleInterval, intervalSize)
 
   const wheels: WheelData[] = PinwheelData.map((p, index) => {
     const randomIndex = Math.trunc(Math.random() * 4)
@@ -47,10 +46,8 @@ export const pinwheelData = (rect: DOMRect): WheelData[] => {
     const pwheight = screen.width > 768 ? 200 : 100
     const positionY = intervalSize * currentBatch - pwheight
     const leaning = LeaningRange.min + angleInterval * (index % batchSize)
-    console.log('positionY:', positionY, 'leaning:', leaning)
 
     if ((index + 1) % batchSize === 0) {
-      console.log(currentBatch, index)
       currentBatch++
     }
 

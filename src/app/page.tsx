@@ -4,14 +4,14 @@ import PlayArea from '@/components/PlayArea'
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center p-8">
+    <div className="flex justify-center items-center py-8 px-16">
       <div className="w-full max-w-screen-2xl">
         <div className="text-3xl md:text-7xl font-bold mb-2 md:mb-4">फिरकी</div>
         <div className="col-span-5 lg:col-span-2 text-base md:text-2xl font-bold max-w-[300px]">
           Objects of Transient Belongings
         </div>
         <div className="grid grid-cols-5 gap-4 mt-8">
-          <div className="relative col-span-5 md:col-span-2 text-sm flex flex-col justify-start">
+          <div className="relative col-span-5 md:col-span-2 text-sm flex flex-col justify-between mt-5">
             <div className="absolute top-[50%] left-[50%]" id="refDiv" />
             <div>
               <p>
@@ -34,7 +34,7 @@ export default function Home() {
                 vocabulary.
               </p>
             </div>
-            <div className="mt-12">
+            <div className="">
               <div className="flex gap-x-6 mb-6">
                 <div className="flex flex-col w-16 items-center text-center">
                   <div className="w-20 h-20 border">Image</div>
