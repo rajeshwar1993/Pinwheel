@@ -4,7 +4,6 @@ import PaperFlower from '@/components/PaperFlower'
 import { WheelType, type WheelData } from '../initalValues'
 import { useState, useRef, useEffect } from 'react'
 import { pinwheelData } from '@/utils'
-import Image from 'next/image'
 
 export default function PlayArea() {
   const pinBarRef = useRef<HTMLDivElement | null>(null)

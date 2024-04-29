@@ -1,6 +1,9 @@
 'use client'
 
 import PlayArea from '@/components/PlayArea'
+import Image from 'next/image'
+import * as sPW from '@/assets/images/sPW.png'
+import * as sPC from '@/assets/images/sPC.png'
 
 export default function Home() {
   return (
@@ -34,14 +37,18 @@ export default function Home() {
                 vocabulary.
               </p>
             </div>
-            <div className="">
+            <div className="mt-5">
               <div className="flex gap-x-6 mb-6">
                 <div className="flex flex-col w-16 items-center text-center">
-                  <div className="w-20 h-20 border">Image</div>
+                  <div className="w-16 h-16">
+                    <Image src={sPW} alt="" width={200} height={200} />
+                  </div>
                   <span className="text-xs">Documented Designs</span>
                 </div>
-                <div className="flex flex-col w-20 items-center text-center">
-                  <div className="w-20 h-20 border">Image</div>
+                <div className="flex flex-col w-16 items-center text-center">
+                  <div className="w-16 h-16">
+                    <Image src={sPC} alt="" width={200} height={200} />
+                  </div>
                   <span className="text-xs">Voices of the People</span>
                 </div>
               </div>
