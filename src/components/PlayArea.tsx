@@ -1,7 +1,7 @@
 'use client'
 
 import PaperFlower from '@/components/PaperFlower'
-import { type WheelData } from '../initalValues'
+import { WheelType, type WheelData } from '../initalValues'
 import { useState, useRef, useEffect } from 'react'
 import { pinwheelData } from '@/utils'
 import Image from 'next/image'
@@ -10,7 +10,7 @@ export default function PlayArea() {
   const pinBarRef = useRef<HTMLDivElement | null>(null)
 
   const [pinwheels, updatePinwheels] = useState<WheelData[]>([])
-  const [poster, updatePoster] = useState<string | null>(null)
+  const [poster, updatePoster] = useState<WheelData | null>(null)
 
   const onSelectFlower = (id: number) => {
     let nextState = pinwheels
@@ -21,7 +21,7 @@ export default function PlayArea() {
       .map((f) => {
         if (f.id === id) {
           f.isChosen = true
-          updatePoster(f.openImg)
+          updatePoster(f)
         }
         return f
       })
@@ -79,7 +79,17 @@ export default function PlayArea() {
                           }px`,
                   }}
                 >
-                  <Image src={poster} alt="" width={2000} height={2000} />
+                  {/* <Image src={poster} alt="" width={2000} height={2000} /> */}
+                  <img
+                    src={poster.openImg}
+                    alt="poster"
+                    className={`w-full ${
+                      poster.type === WheelType.TypeB && 'animate-spin'
+                    }`}
+                    style={{
+                      animationDuration: '40s',
+                    }}
+                  />
                 </div>
               </>
             )}

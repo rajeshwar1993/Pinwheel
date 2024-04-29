@@ -44,246 +44,246 @@ export type WheelData = {
 const PinwheelDataA: InitialData[] = [
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
   {
     type: WheelType.TypeA,
-    openImg: '/images/sample.png',
+    openImg: '/PWImages/PWImg1.png',
   },
 ]
 
 const PinwheelDataB: InitialData[] = [
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/images/sample.png',
+    openImg: '/PCImages/PCImg1.png',
   },
 ]
 
