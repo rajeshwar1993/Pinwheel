@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center py-8 px-16">
       <div className="w-full max-w-screen-2xl">
-        <div className="text-3xl md:text-7xl font-bold mb-2 md:mb-4">फिरकी</div>
+        <div className="text-5xl md:text-7xl font-bold mb-2 md:mb-4">फिरकी</div>
         <div className="col-span-5 lg:col-span-2 text-base md:text-2xl font-bold max-w-[300px]">
           Objects of Transient Belongings
         </div>
