@@ -10,22 +10,14 @@ export default function Home() {
     <div className="flex justify-center items-center py-8 px-16">
       <div className="w-full max-w-screen-2xl">
         <div className="text-5xl md:text-7xl font-bold mb-2 md:mb-4">फिरकी</div>
-        <div className="col-span-5 lg:col-span-2 text-base md:text-2xl font-bold max-w-[300px]">
-          Objects of Transient Belongings
+        <div className="col-span-5 lg:col-span-2 text-base md:text-3xl font-bold max-w-[300px]">
+          Objects of <br /> Transient Belongings
         </div>
         <div className="grid grid-cols-5 gap-4 mt-8">
           <div className="relative col-span-5 md:col-span-2 text-sm flex flex-col justify-between mt-5">
             <div className="absolute top-[50%] left-[50%]" id="refDiv" />
             <div>
               <p>
-                The merging of architecture and graphic design in India’s public
-                spaces seamlessly blends formality and informality. While widely
-                ingrained graphic design has been a part of daily life, one can
-                unravel the intricate threads of informal visual expression
-                through hand-painted signages, posters, signboards and
-                advertisements.
-              </p>
-              <p className="mt-4">
                 Firki celebrates the multicoloured tapestry of graphic design
                 elements in public spaces around India, delving into the
                 intricacies between cultural narratives and visual motifs. It
@@ -64,7 +56,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="border-b border-black w-full my-4"></div>
-              <div className="text-xs flex justify-between">
+              <div className="text-xs flex justify-between flex-col md:flex-row gap-y-4">
                 <div>
                   <div>
                     Project by{' '}

@@ -58,7 +58,7 @@ export const pinwheelData = (rect: DOMRect): WheelData[] => {
       positionY,
       leaning,
       duration,
-      stickLength: screen.width > 768 ? 180 : 100,
+      stickLength: screen.width > 768 ? 150 : 100,
       openImg: p.openImg,
       wheel,
       isChosen: false,

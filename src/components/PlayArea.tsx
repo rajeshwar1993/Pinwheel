@@ -40,8 +40,8 @@ export default function PlayArea() {
   }, [pinBarRef.current])
 
   return (
-    <div className="pt-20 sm:px-4 md:pt-1 md:pr-20 relative">
-      <div className="mx-auto h-[80vh] aspect-9/16 flex justify-center items-center">
+    <div className="pt-20 sm:px-4 md:pt-0 relative">
+      <div className="mx-auto h-[70vh] aspect-9/16 flex justify-center items-center">
         <div
           className="relative h-[90%] w-full"
           style={{
