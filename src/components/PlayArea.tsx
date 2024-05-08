@@ -40,66 +40,63 @@ export default function PlayArea() {
   }, [pinBarRef.current])
 
   return (
-    <div className="pt-20 sm:px-4 md:pt-0 relative">
-      <div className="mx-auto h-[70vh] aspect-9/16 flex justify-center items-center">
+    <div className="pt-20 sm:px-4 md:pt-0 h-[700px] flex justify-center">
+      <div
+        className="h-full w-[326px] md:w-[370px] relative ml-20"
+        style={{
+          backgroundImage: `url('/images/seller.png')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+        }}
+      >
         <div
-          className="relative h-[90%] w-full"
+          className="relative w-[50px] h-[300px] top-[20px] left-[60px] md:w-[60px] md:h-[280px] md:top-[150px] md:left-[110px]"
           style={{
-            backgroundImage: `url('/images/seller.png')`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
+            transformBox: 'fill-box',
           }}
+          ref={pinBarRef}
         >
-          <div
-            className="relative w-[11%] h-[55%] top-[1%] left-[34%]"
-            style={{
-              transformBox: 'fill-box',
-            }}
-            ref={pinBarRef}
-          >
-            {poster && (
-              <>
-                <div
-                  className="fixed left-0 right-0 top-0 bottom-0 z-20 bg-transparent"
-                  onClick={clearSelection}
-                />
-                <div
-                  className="absolute w-[calc(100vw-40px)] md:w-[800px] md:-left-[350px] md:-top-36 border rounded-lg shadow-lg z-50 origin-center"
-                  style={{
-                    left:
-                      screen.width > 768
-                        ? '-320px'
-                        : `${
-                            -(
-                              pinBarRef.current?.getBoundingClientRect().left ||
-                              0
-                            ) + 20
-                          }px`,
-                  }}
-                >
-                  {/* <Image src={poster} alt="" width={2000} height={2000} /> */}
-                  <img
-                    src={poster.openImg}
-                    alt="poster"
-                    className={`w-full ${
-                      poster.type === WheelType.TypeB && 'animate-spin'
-                    }`}
-                    style={{
-                      animationDuration: '40s',
-                    }}
-                  />
-                </div>
-              </>
-            )}
-            {pinwheels.map((flower) => (
-              <PaperFlower
-                {...flower}
-                key={flower.id}
-                onSelected={onSelectFlower}
+          {poster && (
+            <>
+              <div
+                className="fixed left-0 right-0 top-0 bottom-0 z-20 bg-transparent"
+                onClick={clearSelection}
               />
-            ))}
-          </div>
+              <div
+                className="absolute w-[calc(100vw-40px)] md:w-[700px] md:-top-36 border rounded-lg shadow-lg z-50 origin-center bg-white p-4"
+                style={{
+                  left:
+                    screen.width > 768
+                      ? '-270px'
+                      : `${
+                          -(
+                            pinBarRef.current?.getBoundingClientRect().left || 0
+                          ) + 20
+                        }px`,
+                }}
+              >
+                {/* <Image src={poster} alt="" width={2000} height={2000} /> */}
+                <img
+                  src={poster.openImg}
+                  alt="poster"
+                  className={`w-full ${
+                    poster.type === WheelType.TypeB && 'animate-spin'
+                  }`}
+                  style={{
+                    animationDuration: '40s',
+                  }}
+                />
+              </div>
+            </>
+          )}
+          {pinwheels.map((flower) => (
+            <PaperFlower
+              {...flower}
+              key={flower.id}
+              onSelected={onSelectFlower}
+            />
+          ))}
         </div>
       </div>
     </div>
