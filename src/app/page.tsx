@@ -19,15 +19,19 @@ export default function Home() {
             </div>
             <div className="mt-5">
               <p>
-                Firki celebrates the multicoloured tapestry of graphic design
-                elements in public spaces around India, delving into the
-                intricacies between cultural narratives and visual motifs. It
-                also explores the process of investigating the narrative of
-                text, symbols, and language and contextualising the
-                Indian-specific design system. Through a lens that celebrates
-                heritage, art, and everyday life, Jagruk unveils the profound
-                stories woven within these spaces informed by documented design
-                vocabulary.
+                Firki (फिरकी) celebrates the colourful, diverse visual language
+                of hand-painted signs in India’s public spaces. The project
+                playfully captures their transient essence through multiple
+                designed objects, highlighting voices and narratives while
+                documenting and archiving them. Firki takes you down memory lane
+                embedded in a cultural heritage often overlooked as everyday
+                ephemera.
+              </p>
+              <p className="mt-5">
+                Objects here refer to the signs that are often temporal and have
+                been replaced by more modern techniques and outcomes. Despite
+                that, these visual elements belong to the collective memory and
+                identity of spaces and people who navigate through them.
               </p>
             </div>
             <div className="flex gap-x-6 mt-5">

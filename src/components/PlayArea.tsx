@@ -41,17 +41,36 @@ export default function PlayArea() {
 
   return (
     <div className="pt-20 sm:px-4 md:pt-0 h-[700px] flex justify-center">
-      <div
-        className="h-full w-[326px] md:w-[370px] relative ml-20"
-        style={{
-          backgroundImage: `url('/images/seller.png')`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-        }}
-      >
+      <div className="h-full w-[326px] md:w-[370px] relative ml-20">
         <div
-          className="relative w-[50px] h-[300px] top-[20px] left-[60px] md:w-[60px] md:h-[280px] md:top-[150px] md:left-[110px]"
+          className="h-60 w-60 top-[-270px] right-[-50px] md:top-[-100px] md:right-[-140px] absolute"
+          style={{
+            backgroundImage: `url('/images/click.png')`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div
+          className="h-full w-full absolute md:hidden"
+          style={{
+            backgroundImage: `url('/images/seller.svg')`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '150%',
+            backgroundPosition: '50% 100%',
+          }}
+        />
+        <div
+          className="h-full w-full absolute hidden md:block"
+          style={{
+            backgroundImage: `url('/images/seller.svg')`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '140%',
+            backgroundPosition: '-70px 80px',
+          }}
+        />
+        <div
+          className="relative w-[50px] h-[300px] top-[20px] left-[60px] md:w-[60px] md:h-[280px] md:top-[180px] md:left-[110px]"
           style={{
             transformBox: 'fill-box',
           }}
