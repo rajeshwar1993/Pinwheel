@@ -40,10 +40,10 @@ export default function PlayArea() {
   }, [pinBarRef.current])
 
   return (
-    <div className="pt-20 sm:px-4 md:pt-0 h-[700px] flex justify-center">
+    <div className="pt-20 sm:px-4 md:pt-0 h-[700px] md:h-[850px] flex justify-center">
       <div className="h-full w-[326px] md:w-[370px] relative ml-20">
         <div
-          className="h-60 w-60 top-[-270px] right-[-50px] md:top-[-100px] md:right-[-140px] absolute"
+          className="h-60 w-60 top-[-270px] right-[-50px] md:top-[-60px] md:right-[-140px] absolute"
           style={{
             backgroundImage: `url('/images/click.png')`,
             backgroundRepeat: 'no-repeat',
@@ -56,8 +56,8 @@ export default function PlayArea() {
           style={{
             backgroundImage: `url('/images/seller.svg')`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: '150%',
-            backgroundPosition: '50% 100%',
+            backgroundSize: '160%',
+            backgroundPosition: '-75px 120%',
           }}
         />
         <div
@@ -65,12 +65,12 @@ export default function PlayArea() {
           style={{
             backgroundImage: `url('/images/seller.svg')`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: '140%',
-            backgroundPosition: '-70px 80px',
+            backgroundSize: '155%',
+            backgroundPosition: '-100px 120px',
           }}
         />
         <div
-          className="relative w-[50px] h-[300px] top-[20px] left-[60px] md:w-[60px] md:h-[280px] md:top-[180px] md:left-[110px]"
+          className="relative w-[50px] h-[300px] top-[20px] left-[60px] md:w-[60px] md:h-[280px] md:top-[220px] md:left-[110px]"
           style={{
             transformBox: 'fill-box',
           }}

@@ -97,43 +97,43 @@ const PinwheelDataA: InitialData[] = [
 const PinwheelDataB: InitialData[] = [
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_01.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_02.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_01.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_02.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_01.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_02.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_01.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_02.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_01.png',
   },
   {
     type: WheelType.TypeB,
-    openImg: '/PCImages/PCImg1.png',
+    openImg: '/PCImages/PCImg_02.png',
   },
 ]
 

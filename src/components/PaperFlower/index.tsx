@@ -27,7 +27,11 @@ const PaperFlower = ({
 
   const parentVariants = {
     [FlowerStates.Initial]: { opacity: 0.9, scale: [1] },
-    [FlowerStates.Hover]: { opacity: 1, scale: [1.2] },
+    [FlowerStates.Hover]: {
+      opacity: 1,
+      scale: [1.2],
+      transition: { type: 'tween', scale: { duration: 0.5 } },
+    },
   }
 
   return (
@@ -39,7 +43,6 @@ const PaperFlower = ({
           translateX: `${positionX}px`,
           translateY: `${positionY}px`,
         }}
-        transition={{ type: 'spring', duration: 2.2, bounce: 0.7 }}
         onClick={onSelected.bind(null, id)}
         variants={parentVariants}
         animate={state}
