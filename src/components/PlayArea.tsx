@@ -103,7 +103,7 @@ export default function PlayArea() {
                     poster.type === WheelType.TypeB && 'animate-spin'
                   }`}
                   style={{
-                    animationDuration: '40s',
+                    animationDuration: '70s',
                   }}
                 />
               </div>
