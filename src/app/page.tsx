@@ -61,10 +61,12 @@ export default function Home() {
                 Documentation images by
               </span>
               <p>
-                Pallavi Yadav, Suneepa Das, Bhavani Bala, Anupa Joshy, Priyanka
-                Vaghela, Ronojoy Sircar, Shreeparna Chatterjee, Qainaat, Bandita
-                Ghosh, Niharika Arora, Srinidhi Ravishankar, Abhranil Munsi,
-                Vasundhara Kapoor
+                Pallavi Yadav, Suneepa Das, Bhavani Balasubramanyam, Anupa
+                Joshy, Priyanka Vaghela, Ronojoy Sircar, Qainaat, Shreeparna
+                Chatterjee, Sarthak Bhattacharya, Bandita Ghosh, Niharika Arora,
+                Srinidhi Ravishankar, Abhranil Munsi, Srijeeta, Vasundhara
+                Kapoor, Tithi Majumder, Dr. Sunil Koijam, Senwarne Goyary, Tisha
+                Kulgod
               </p>
             </div>
             <div className="mt-5">
@@ -187,6 +189,28 @@ export default function Home() {
               Ravishankar, Abhranil Munsi, Srijeeta, Vasundhara Kapoor, Tithi
               Majumder, Dr. Sunil Koijam, Senwarne Goyary, Tisha Kulgod
             </p>
+          </div>
+
+          <div className="mt-5">
+            <span className="font-bold mb-2 block">Online Resources</span>
+            <div>
+              <a
+                className="underline pointer"
+                href="https://www.flickr.com/photos/meanestindian/"
+                target="_blank"
+              >
+                Meena Kadri | Flickr
+              </a>
+            </div>
+            <div>
+              <a
+                className="underline pointer"
+                href="https://www.flickr.com/groups/indicscripts/"
+                target="_blank"
+              >
+                Indic & Indian scripts | Flickr
+              </a>
+            </div>
           </div>
           <div className="border-b border-black w-full my-4"></div>
           <div className="text-xs flex justify-between flex-col md:flex-row gap-y-4">
